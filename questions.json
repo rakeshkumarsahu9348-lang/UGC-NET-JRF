@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "notice": "Starter sample bank only. Add verified questions to reach 1,000 per unit. Do not label generated practice items as PYQs.",
+  "questions": [
+    {
+      "id": "u1-sample-1",
+      "unit": 1,
+      "topic": "Teaching Aptitude",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "Which level of teaching is primarily concerned with problem-solving and critical reflection?",
+        "hi": "Which level of teaching is primarily concerned with problem-solving and critical reflection?"
+      },
+      "options": {
+        "en": [
+          "Reflective level",
+          "Memory level",
+          "Understanding level",
+          "Autonomous level"
+        ],
+        "hi": [
+          "Reflective level",
+          "Memory level",
+          "Understanding level",
+          "Autonomous level"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The reflective level encourages critical thinking, independent judgement and solving unfamiliar problems.",
+        "hi": "चिंतनशील स्तर आलोचनात्मक सोच, स्वतंत्र निर्णय और नई समस्याओं के समाधान को बढ़ावा देता है।"
+      },
+      "example": {
+        "en": "Concept-based practice",
+        "hi": "अवधारणा आधारित अभ्यास"
+      }
+    },
+    {
+      "id": "u1-sample-2",
+      "unit": 1,
+      "topic": "Teaching Aptitude",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "Which assessment is conducted during the teaching-learning process to improve learning?",
+        "hi": "Which assessment is conducted during the teaching-learning process to improve learning?"
+      },
+      "options": {
+        "en": [
+          "Formative assessment",
+          "Summative assessment",
+          "Placement assessment",
+          "Norm-referenced assessment"
+        ],
+        "hi": [
+          "Formative assessment",
+          "Summative assessment",
+          "Placement assessment",
+          "Norm-referenced assessment"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Formative assessment provides ongoing feedback while instruction is in progress.",
+        "hi": "रचनात्मक मूल्यांकन शिक्षण के दौरान निरंतर प्रतिक्रिया देकर सीखने में सुधार करता है।"
+      },
+      "example": {
+        "en": "Weekly feedback quiz",
+        "hi": "साप्ताहिक प्रतिक्रिया प्रश्नोत्तरी"
+      }
+    },
+    {
+      "id": "u2-sample-3",
+      "unit": 2,
+      "topic": "Research Aptitude",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "A hypothesis stating that there is no significant difference between two groups is called:",
+        "hi": "A hypothesis stating that there is no significant difference between two groups is called:"
+      },
+      "options": {
+        "en": [
+          "Null hypothesis",
+          "Alternative hypothesis",
+          "Directional hypothesis",
+          "Working hypothesis"
+        ],
+        "hi": [
+          "Null hypothesis",
+          "Alternative hypothesis",
+          "Directional hypothesis",
+          "Working hypothesis"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The null hypothesis (H0) generally states that no effect, association or difference exists.",
+        "hi": "शून्य परिकल्पना (H0) सामान्यतः प्रभाव, संबंध या अंतर न होने का कथन है।"
+      },
+      "example": {
+        "en": "H0: μ1 = μ2",
+        "hi": "H0: μ1 = μ2"
+      }
+    },
+    {
+      "id": "u2-sample-4",
+      "unit": 2,
+      "topic": "Research Aptitude",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "Which sampling method gives every unit in the population an equal chance of selection?",
+        "hi": "Which sampling method gives every unit in the population an equal chance of selection?"
+      },
+      "options": {
+        "en": [
+          "Simple random sampling",
+          "Purposive sampling",
+          "Snowball sampling",
+          "Quota sampling"
+        ],
+        "hi": [
+          "Simple random sampling",
+          "Purposive sampling",
+          "Snowball sampling",
+          "Quota sampling"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "In simple random sampling, each population unit has an equal and independent chance of selection.",
+        "hi": "सरल यादृच्छिक प्रतिचयन में समष्टि की प्रत्येक इकाई के चुने जाने की समान संभावना होती है।"
+      },
+      "example": {
+        "en": "Lottery method",
+        "hi": "लॉटरी विधि"
+      }
+    },
+    {
+      "id": "u3-sample-5",
+      "unit": 3,
+      "topic": "Comprehension",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "Read the passage: 'Open access expands the reach of scholarly work, but quality assurance still depends on rigorous peer review.' What is the central idea?",
+        "hi": "Read the passage: 'Open access expands the reach of scholarly work, but quality assurance still depends on rigorous peer review.' What is the central idea?"
+      },
+      "options": {
+        "en": [
+          "Open access removes the need for peer review",
+          "Wider access and quality review are both important",
+          "Peer review prevents wider access",
+          "All open-access work is automatically reliable"
+        ],
+        "hi": [
+          "Open access removes the need for peer review",
+          "Wider access and quality review are both important",
+          "Peer review prevents wider access",
+          "All open-access work is automatically reliable"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "en": "The sentence supports wider access while retaining rigorous peer review as a quality safeguard.",
+        "hi": "वाक्य व्यापक पहुँच का समर्थन करता है, साथ ही गुणवत्ता के लिए कठोर सहकर्मी समीक्षा को आवश्यक मानता है।"
+      },
+      "example": {
+        "en": "Both access and quality assurance matter.",
+        "hi": "पहुँच और गुणवत्ता—दोनों महत्त्वपूर्ण हैं।"
+      }
+    },
+    {
+      "id": "u4-sample-6",
+      "unit": 4,
+      "topic": "Communication",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "In the Shannon-Weaver model, which component represents interference in message transmission?",
+        "hi": "In the Shannon-Weaver model, which component represents interference in message transmission?"
+      },
+      "options": {
+        "en": [
+          "Noise",
+          "Feedback",
+          "Channel",
+          "Context"
+        ],
+        "hi": [
+          "Noise",
+          "Feedback",
+          "Channel",
+          "Context"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Noise is any interference that distorts or obstructs the transmission of a message.",
+        "hi": "Noise वह व्यवधान है जो संदेश के संप्रेषण को विकृत या बाधित करता है।"
+      },
+      "example": {
+        "en": "A loud sound during a lecture",
+        "hi": "व्याख्यान के दौरान तेज बाहरी आवाज"
+      }
+    },
+    {
+      "id": "u5-sample-7",
+      "unit": 5,
+      "topic": "Mathematical Reasoning",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "A number is increased by 20% and then decreased by 20%. What is the net change?",
+        "hi": "A number is increased by 20% and then decreased by 20%. What is the net change?"
+      },
+      "options": {
+        "en": [
+          "No change",
+          "4% decrease",
+          "4% increase",
+          "2% decrease"
+        ],
+        "hi": [
+          "No change",
+          "4% decrease",
+          "4% increase",
+          "2% decrease"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "en": "Take 100: after a 20% increase it becomes 120; a 20% decrease gives 96. Net change = 4% decrease.",
+        "hi": "100 मानें: 20% वृद्धि के बाद 120; फिर 20% कमी पर 96। कुल परिवर्तन 4% की कमी है।"
+      },
+      "example": {
+        "en": "100 → 120 → 96",
+        "hi": "100 → 120 → 96"
+      }
+    },
+    {
+      "id": "u6-sample-8",
+      "unit": 6,
+      "topic": "Logical Reasoning",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "In Indian logic, inference is known as:",
+        "hi": "In Indian logic, inference is known as:"
+      },
+      "options": {
+        "en": [
+          "Anumana",
+          "Pratyaksha",
+          "Upamana",
+          "Shabda"
+        ],
+        "hi": [
+          "Anumana",
+          "Pratyaksha",
+          "Upamana",
+          "Shabda"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Anumana is knowledge obtained through inference, based on a recognised relation such as vyapti.",
+        "hi": "अनुमान वह ज्ञान है जो व्याप्ति जैसे मान्य संबंध के आधार पर निष्कर्ष से प्राप्त होता है।"
+      },
+      "example": {
+        "en": "Smoke indicates fire when the relation is established.",
+        "hi": "व्याप्ति स्थापित होने पर धुआँ अग्नि का संकेत देता है।"
+      }
+    },
+    {
+      "id": "u7-sample-9",
+      "unit": 7,
+      "topic": "Data Interpretation",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "A department has 800 students in 2021 and 1,000 in 2024. What is the percentage increase?",
+        "hi": "A department has 800 students in 2021 and 1,000 in 2024. What is the percentage increase?"
+      },
+      "options": {
+        "en": [
+          "20%",
+          "25%",
+          "30%",
+          "40%"
+        ],
+        "hi": [
+          "20%",
+          "25%",
+          "30%",
+          "40%"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "en": "Increase = 200. Percentage increase = (200/800) × 100 = 25%.",
+        "hi": "वृद्धि = 200। प्रतिशत वृद्धि = (200/800) × 100 = 25%।"
+      },
+      "example": {
+        "en": "(1000 − 800) / 800 × 100",
+        "hi": "(1000 − 800) / 800 × 100"
+      }
+    },
+    {
+      "id": "u8-sample-10",
+      "unit": 8,
+      "topic": "ICT",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "Which protocol is primarily used to transfer web pages securely?",
+        "hi": "Which protocol is primarily used to transfer web pages securely?"
+      },
+      "options": {
+        "en": [
+          "HTTPS",
+          "FTP",
+          "SMTP",
+          "POP3"
+        ],
+        "hi": [
+          "HTTPS",
+          "FTP",
+          "SMTP",
+          "POP3"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "HTTPS uses TLS to protect data exchanged between a browser and a web server.",
+        "hi": "HTTPS ब्राउज़र और वेब सर्वर के बीच डेटा को TLS द्वारा सुरक्षित करता है।"
+      },
+      "example": {
+        "en": "Secure web browsing",
+        "hi": "सुरक्षित वेब ब्राउज़िंग"
+      }
+    },
+    {
+      "id": "u9-sample-11",
+      "unit": 9,
+      "topic": "People & Environment",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "The Montreal Protocol primarily addresses the depletion of:",
+        "hi": "The Montreal Protocol primarily addresses the depletion of:"
+      },
+      "options": {
+        "en": [
+          "Stratospheric ozone",
+          "Groundwater",
+          "Forest cover",
+          "Biodiversity"
+        ],
+        "hi": [
+          "Stratospheric ozone",
+          "Groundwater",
+          "Forest cover",
+          "Biodiversity"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The Montreal Protocol controls ozone-depleting substances to protect the stratospheric ozone layer.",
+        "hi": "मॉन्ट्रियल प्रोटोकॉल समतापमंडलीय ओजोन परत की रक्षा हेतु ओजोन-क्षयकारी पदार्थों को नियंत्रित करता है।"
+      },
+      "example": {
+        "en": "CFC phase-out",
+        "hi": "CFC का चरणबद्ध उन्मूलन"
+      }
+    },
+    {
+      "id": "u10-sample-12",
+      "unit": 10,
+      "topic": "Higher Education",
+      "type": "Practice",
+      "year": null,
+      "q": {
+        "en": "The University Grants Commission (UGC) was established by an Act of Parliament in:",
+        "hi": "The University Grants Commission (UGC) was established by an Act of Parliament in:"
+      },
+      "options": {
+        "en": [
+          "1953",
+          "1956",
+          "1961",
+          "1948"
+        ],
+        "hi": [
+          "1953",
+          "1956",
+          "1961",
+          "1948"
+        ]
+      },
+      "answer": 1,
+      "explanation": {
+        "en": "The UGC became a statutory body through the UGC Act, 1956. It had earlier been inaugurated in 1953.",
+        "hi": "UGC अधिनियम, 1956 के माध्यम से UGC वैधानिक संस्था बना। इसका उद्घाटन 1953 में हुआ था।"
+      },
+      "example": {
+        "en": "UGC Act, 1956",
+        "hi": "UGC अधिनियम, 1956"
+      }
+    }
+  ]
+}

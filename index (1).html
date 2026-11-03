@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UGC NET JRF Paper 1 Master Portal</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+:root{color-scheme:dark;--bg:#080f22;--card:#101b33;--line:#293754;--muted:#a8b5cc;--accent:#7867ff;--good:#34d399;--bad:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#070d1b,#17164a 55%,#0b1425);color:#f8fafc;font-family:Outfit,'Noto Sans Devanagari',sans-serif;min-height:100vh}
+header{position:sticky;top:0;z-index:5;background:#0b1228eF;border-bottom:1px solid var(--line);padding:14px 4vw;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;gap:12px;align-items:center}.logo{background:linear-gradient(135deg,#5145cd,#a855f7);padding:12px;border-radius:14px;font-weight:800}
+h1{font-size:18px;margin:0}small,.muted{color:var(--muted)}.wrap{max-width:1250px;margin:auto;padding:24px;display:grid;grid-template-columns:280px 1fr;gap:22px}
+.card{background:#101b33df;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 15px 35px #0003}.side{display:grid;gap:16px;align-content:start}
+button,select{font:inherit;border:1px solid var(--line);border-radius:12px;padding:10px 13px;background:#1b2945;color:white;cursor:pointer}button:hover{border-color:#897dff}button.primary{background:linear-gradient(100deg,#5548d8,#8b45d7);border:0;font-weight:700}button:disabled{opacity:.45;cursor:not-allowed}
+.unit{width:100%;text-align:left;margin:4px 0;background:#131f38}.unit.active{border-color:#8878ff;background:#27245a}.stat{display:flex;justify-content:space-between;margin:8px 0}.bar{height:9px;background:#27344e;border-radius:20px;overflow:hidden}.bar>i{display:block;height:100%;background:linear-gradient(90deg,#7567ff,#34d399);width:0}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.question{margin:16px 0;padding:18px;background:#0d172c;border:1px solid var(--line);border-radius:18px}.qtitle{font-size:17px;font-weight:600;line-height:1.5}.opts{display:grid;gap:9px;margin-top:14px}.opt{width:100%;text-align:left;white-space:normal}.opt.chosen{border-color:#9588ff;background:#302b68}.opt.correct{border-color:var(--good);background:#064e3b}.opt.wrong{border-color:var(--bad);background:#571d31}.feedback{margin-top:12px;padding:12px;border-radius:12px;background:#17243d;color:#dce6f7;line-height:1.55}.hidden{display:none}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.pill{font-size:11px;border:1px solid #455577;padding:4px 8px;border-radius:99px;color:#c6d2e7}.notice{font-size:12px;line-height:1.5;color:#fcd38d;background:#4a3516;border:1px solid #88672a;padding:10px;border-radius:12px}
+@media(max-width:800px){.wrap{grid-template-columns:1fr;padding:14px}.side{grid-template-columns:1fr}.qtitle{font-size:16px}}
+</style></head><body>
+<header><div class="brand"><div class="logo">JRF</div><div><h1>UGC NET JRF Paper 1 Portal</h1><small>Master Preparation Hub • Rakesh Kumar Sahu Sir</small></div></div>
+<div class="actions" style="margin:0"><button id="langBtn">🌐 English / हिंदी</button><button id="mockBtn">Start 50-Q Mock Test</button><button id="resetBtn">Reset Progress</button></div></header>
+<div class="wrap"><aside class="side">
+<section class="card"><div class="stat"><span class="muted">Readiness</span><b id="grade">Getting started</b></div><div style="font-size:32px;font-weight:800" id="accuracy">0%</div><small>Accuracy</small><div class="bar" style="margin:12px 0"><i id="progressBar"></i></div><div class="stat"><span class="muted">Attempted</span><b id="attempted">0</b></div><div class="stat"><span class="muted">Correct</span><b id="correct">0</b></div><div class="stat"><span class="muted">Wrong</span><b id="wrong">0</b></div></section>
+<section class="card"><b>Paper 1 Units</b><div id="unitList" style="margin-top:10px"></div></section>
+<section class="card"><b>Practice controls</b><p class="muted" style="font-size:13px">Choose how you want to practise.</p><select id="filter" style="width:100%"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Previously wrong</option><option value="bookmarked">Bookmarked</option></select><div class="actions"><button id="reviewBtn">Review wrong answers</button><button id="bookmarkViewBtn">Bookmarks</button></div></section>
+</aside>
+<main>
+<section class="card"><div class="topline"><div><span class="pill" id="unitBadge">UNIT 1</span><h2 id="unitTitle" style="margin:8px 0 2px">Teaching Aptitude</h2><small id="unitCount">Loading question bank…</small></div><div style="text-align:right"><small id="timerLabel">Study timer</small><div id="timer" style="font-size:22px;color:#fbbf24;font-weight:700">00:00</div></div></div>
+<div class="notice" style="margin-top:14px">Starter build: the portal is wired for up to 1,000 questions in each unit. This download includes sample questions only; add verified question-bank entries in <b>questions.json</b>. Actual PYQs must be verified and tagged with their exam year.</div>
+<div id="quizArea"></div><div class="topline" style="margin-top:12px"><small id="position">Question 1</small><div class="actions"><button id="prevBtn">Previous</button><button id="nextBtn" class="primary">Next</button></div></div>
+</section>
+<section class="card" style="margin-top:16px"><div class="topline"><b>Session summary</b><button id="submitMockBtn" class="primary hidden">Submit mock test</button></div><p class="muted" id="summary">Select an option to receive feedback and explanation.</p></section>
+</main></div>
+<footer style="text-align:center;padding:24px;color:#8290aa;border-top:1px solid #293754">RAKESH KUMAR SAHU SIR • UGC NET JRF Paper 1 Master Preparation</footer>
+<script>
+const UNIT_NAMES=["Teaching Aptitude","Research Aptitude","Comprehension","Communication","Mathematical Reasoning and Aptitude","Logical Reasoning","Data Interpretation","Information and Communication Technology (ICT)","People, Development and Environment","Higher Education System"];
+let bank=[],unit=1,index=0,lang="en",mock=false,mockSet=[],started=Date.now(),timerSeconds=0;
+let state=JSON.parse(localStorage.getItem("jrfPaper1Progress")||'{"answers":{},"bookmarks":[]}');
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem("jrfPaper1Progress",JSON.stringify(state));renderStats()}
+function key(q){return q.id}
+function currentList(){let list=mock?mockSet:bank.filter(q=>q.unit===unit);let f=$("filter").value;if(!mock&&f==="unanswered")list=list.filter(q=>state.answers[key(q)]===undefined);if(!mock&&f==="wrong")list=list.filter(q=>state.answers[key(q)]!==undefined&&state.answers[key(q)]!==q.answer);if(!mock&&f==="bookmarked")list=list.filter(q=>state.bookmarks.includes(key(q)));return list}
+function renderUnits(){$("unitList").innerHTML=UNIT_NAMES.map((n,i)=>`<button class="unit ${unit===i+1&&!mock?'active':''}" data-unit="${i+1}"><b>Unit ${i+1}</b><br><small>${n}</small></button>`).join("");document.querySelectorAll("[data-unit]").forEach(b=>b.onclick=()=>{mock=false;unit=+b.dataset.unit;index=0;render()})}
+function txt(q,field){let v=q[field];return typeof v==="object"?(v[lang]||v.en):v}
+function render(){renderUnits();let list=currentList();$("unitBadge").textContent=mock?"MOCK TEST":"UNIT "+unit;$("unitTitle").textContent=mock?"50-Question Mock Test":UNIT_NAMES[unit-1];$("unitCount").textContent=`${list.length} questions available in this view`;if(!list.length){$("quizArea").innerHTML='<p class="muted">No questions match this filter. Add questions to questions.json or change the filter.</p>';$("position").textContent="No questions";return}
+index=Math.max(0,Math.min(index,list.length-1));let q=list[index],ans=state.answers[key(q)],chosen=ans!==undefined;let options=txt(q,"options");let exp=q.explanation||{};let explanation=exp[lang]||exp.en||"";let example=(q.example||{})[lang]||(q.example||{}).en||"";
+$("quizArea").innerHTML=`<article class="question"><div class="topline"><span class="pill">${q.type==="PYQ"&&q.year?"Verified PYQ • "+q.year:"Practice Question"}</span><button id="bookmarkBtn">${state.bookmarks.includes(key(q))?"★ Bookmarked":"☆ Bookmark"}</button></div><div class="qtitle" style="margin-top:12px">${index+1}. ${txt(q,"q")}</div><div class="opts">${options.map((o,i)=>{let cls="opt";if(chosen&&i===q.answer)cls+=" correct";if(chosen&&i===ans&&ans!==q.answer)cls+=" wrong";return `<button class="${cls}" data-opt="${i}" ${chosen?"disabled":""}>${"ABCD"[i]}. ${o}</button>`}).join("")}</div>${chosen?`<div class="feedback"><b style="color:${ans===q.answer?'#34d399':'#fb7185'}">${ans===q.answer?(lang==="en"?"Correct!":"सही उत्तर!"):(lang==="en"?"Incorrect. Correct answer: ":"गलत उत्तर। सही उत्तर: ")+"ABCD"[q.answer]+". "+options[q.answer]}</b><p><b>${lang==="en"?"Explanation":"व्याख्या"}:</b> ${explanation}</p><p><b>${lang==="en"?"Example":"उदाहरण"}:</b> ${example}</p></div>`:""}<div class="muted" style="font-size:11px;margin-top:10px">Question ID: ${q.id}</div></article>`;
+document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=()=>{state.answers[key(q)]=+b.dataset.opt;save();render()});
+$("bookmarkBtn").onclick=()=>{let k=key(q);state.bookmarks=state.bookmarks.includes(k)?state.bookmarks.filter(x=>x!==k):[...state.bookmarks,k];save();render()};
+$("position").textContent=`Question ${index+1} of ${list.length}`;$("prevBtn").disabled=index===0;$("nextBtn").disabled=index===list.length-1;$("submitMockBtn").classList.toggle("hidden",!mock);
+}
+function renderStats(){let vals=Object.values(state.answers),right=vals.filter((v,i)=>{let q=bank.find(x=>x.id===Object.keys(state.answers)[i]);return q&&q.answer===v}).length;let wrong=vals.length-right,acc=vals.length?Math.round(right/vals.length*100):0;$("attempted").textContent=vals.length;$("correct").textContent=right;$("wrong").textContent=wrong;$("accuracy").textContent=acc+"%";$("progressBar").style.width=acc+"%";$("grade").textContent=acc>=80?"Strong":acc>=60?"Improving":"Keep practising"}
+$("prevBtn").onclick=()=>{index--;render()};$("nextBtn").onclick=()=>{index++;render()};
+$("langBtn").onclick=()=>{lang=lang==="en"?"hi":"en";render()};
+$("filter").onchange=()=>{index=0;render()};
+$("reviewBtn").onclick=()=>{$("filter").value="wrong";mock=false;index=0;render()};
+$("bookmarkViewBtn").onclick=()=>{$("filter").value="bookmarked";mock=false;index=0;render()};
+$("resetBtn").onclick=()=>{if(confirm("Delete all saved answers and bookmarks from this browser?")){state={answers:{},bookmarks:[]};save();render()}};
+$("mockBtn").onclick=()=>{let pool=bank.slice();mockSet=pool.sort(()=>Math.random()-.5).slice(0,Math.min(50,pool.length));mock=true;index=0;render();$("summary").textContent="Mock test started. Answer the questions and submit when finished."};
+$("submitMockBtn").onclick=()=>{let attempted=mockSet.filter(q=>state.answers[q.id]!==undefined),right=attempted.filter(q=>state.answers[q.id]===q.answer).length;$("summary").textContent=`Mock result: ${right}/${attempted.length} correct; ${attempted.length-right} incorrect; ${mockSet.length-attempted.length} unanswered.`};
+async function init(){try{let r=await fetch("./questions.json");if(!r.ok)throw Error("questions.json not found");let d=await r.json();bank=d.questions||[];$("unitCount").textContent=bank.length+" starter questions loaded";render();renderStats()}catch(e){$("quizArea").innerHTML=`<div class="notice">Could not load questions.json. Keep it beside index.html and run through GitHub Pages or a local web server. Details: ${e.message}</div>`}}
+setInterval(()=>{timerSeconds=Math.floor((Date.now()-started)/1000);$("timer").textContent=String(Math.floor(timerSeconds/60)).padStart(2,"0")+":"+String(timerSeconds%60).padStart(2,"0")},1000);
+init();
+</script></body></html>
